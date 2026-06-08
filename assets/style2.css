@@ -1187,6 +1187,8 @@ h1, h2, h3, h4 { font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; }
   position: relative;
   height: 300vh;    /* scroll distance — matches React h-[300vh] */
   background: var(--bg);
+  overflow: hidden; /* impede imagens escaladas de vazar para seções vizinhas */
+  isolation: isolate; /* cria stacking context próprio */
 }
 
 /* Sticky container — matches React sticky top-0 h-screen overflow-hidden */
